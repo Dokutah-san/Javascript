@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Tugas Javascript</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <style>
+            body {
+                background-color: black;
+            }
+            h5 {
+                color: gray;
+            }
+            .container {
+                border-radius: 7px;
+                width: 700px;
+            }
+            #tujuan {
+                width: 100%;
+                height: 40px;
+            }
+            #harga {
+                width: 100%;
+                height: 40px;
+            }
+            .m3 {
+                width: 100%;
+                height: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container bg-light">
+            <form class="mt-5 p-4">
+            <h2 class="text-info text-center">PROGRAM PENJUALAN KOMPUTER</h2>
+            <hr>
+            <h5>Silahkan pilih jenis barang yang dibeli dan anda akan</h5>
+            <h5>mengetahui berapa harganya.</h5>
+            <b>Barang</b>
+            <br>
+        <select name="tujuan" id="tujuan">
+            <option value="">- Pilih Barang -</option>
+            <option value="laptop">Laptop</option>
+            <option value="keyboard">Keyboard</option>
+            <option value="mouse">Mouse</option>
+        </select>
+        <br>
+        <b>Discount</b>
+        <br>
+        <input type="text" class="m3" name="discount" id="discount" readonly>
+        <br><br>
+        <b>Harga Jual</b>
+        <br>
+        <input class="bg-danger" type="text" name="harga" id="harga" readonly>
+        <br><br>
+    </form>
+        </div>
+        <script>
+            var tj = document.getElementById('tujuan');
+            var hg = document.getElementById('harga');
+            var ds = document.getElementById('discount');
+
+            tj.addEventListener('change',function() {
+                if(tj.value == 'laptop') {
+                    ds.value = '10%';
+                    hg.value = '7500000' - '750000';
+                }
+                else if(tj.value == 'keyboard') {
+                    ds.value = '10%';
+                    hg.value ='100000' - '10000';
+                }
+                else{
+                    ds.value = '10%';
+                    hg.value = '75000' - '7500' ;
+                }
+            });
+        </script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

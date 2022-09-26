@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Color DOM</title>
+    </head>
+    <body>
+        <h1>change warna</h1>
+        <hr>
+        <label for="">Warna Latar</label>
+        <input type="color" id="bg-color">
+        <hr>
+        <label for="">Warna Teks</label>
+        <input type="color" id="text-color">
+        <hr>
+
+        <script>
+            var bgcolor = document.getElementById("bg-color");
+            var textcolor = document.getElementById("text-color");
+            bgcolor.addEventListener("change",function() {
+                document.body.style.backgroundColor = bgcolor.value;
+            })
+            textcolor.addEventListener("change",function() {
+                document.body.style.color = textcolor.value;
+            })
+        </script>
+    </body>
+</html>

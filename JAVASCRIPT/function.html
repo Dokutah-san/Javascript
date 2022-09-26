@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Belajar Function - Javascript</title>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <script>
+            function alertbox(nama) {
+                alert("Selamat Datang" + nama + "🗿");
+            }
+
+            // function luas_persegi_panjang(p, l) {
+            //     luas = p * l;
+            //     return luas;
+            // }
+            // document.write(luas_persegi_panjang(10, 20));
+            function luaspp(){
+                var p = document.getElementById("nilai_p");
+                var l = document.getElementById("nilai_l");
+                var hasil = document.getElementById("hasil");
+                var hasil1 = p.value * l.value;
+                hasil.value = hasil1;
+
+                var rumus = p.value * l.value;
+                document.getElementById("hasil2").
+                innerHTML = rumus;
+
+            }
+            
+        </script>
+
+        <button style="background-color: aqua;" onclick="alertbox(' Dokutah-san')">Click</button>
+        <h1 style="color: red;">PROGRAM SEDERHANA</h1>
+        <h3 style="color: blue;">MENGHITUNG LUAS PERSEGI PANJANG🗿</h3>
+        <hr>
+        Nilai P<input type="text" id="nilai_p">
+        <br><br>
+        Nilai L<input type="text" id="nilai_l">
+        <br><br>
+        Hasil<input type="text" id="hasil">
+        <br><br>
+        <br><br>
+        <button onclick="luaspp()" style="background-color: aqua;">HASIL</button>
+    </body>
+</html>

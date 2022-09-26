@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Anime</title>
+    </head>
+    <body>
+        <div id="box"></div>
+        <br>
+            <button onclick="tombol()">red</button>
+            <button onclick="tombol2()">blue</button>
+            <button onclick="tombol3()">green</button>
+            <button onclick="tombol0()">reset</button>
+        
+
+        <script>
+            function tombol(){
+                var box = document.getElementById("box");
+                box.style.backgroundColor = "red";
+            }
+            function tombol2(){
+                var box = document.getElementById("box");
+                box.style.backgroundColor = "blue";
+            }
+            function tombol3(){
+                var box = document.getElementById("box");
+                box.style.backgroundColor = "green";
+            }
+            function tombol0(){
+                var box = document.getElementById("box");
+                box.style.backgroundColor = "";
+            }
+
+            var box = document.getElementById("box");
+            box.style.width = "400px";
+            box.style.height = "200px";
+        </script>
+    </body>
+</html>

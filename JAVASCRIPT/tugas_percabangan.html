@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Tugas Percabangan</title>
+        <style>
+            button {
+                background-color: aqua;
+                border: 0px;
+                border-radius: 5px;
+                padding: 15 40;
+            }
+            button:active {
+                background-color: rgb(42, 197, 197);
+            }
+            input {
+                height: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Program Mencari Grade Nilai</h1>
+        <hr>
+        Input nilai
+        <br>
+        <input type="text" id="isi">
+        <br><br>
+        <button onclick="tombol()">CEK</button>
+        <br><br>
+        <div>Grade Nilai Anda Adalah : <span id="grade"></span> </div>
+        
+        <script>
+            function tombol() {
+                var i = document.getElementById("isi").value;
+                var a = document.getElementById("grade");
+                if (i >= 101) {
+                    a.innerHTML = "Bohong, yg benar?";
+                }
+                else if (i >= 90 && i <= 100) {
+                    a.innerHTML = "A";
+                }
+                else if (i >= 80) {
+                    a.innerHTML = "B";
+                }
+                else if (i == 69) {
+                    a.innerHTML = "🗿";
+                }
+                else if (i >= 75) {
+                    a.innerHTML = "C";
+                }
+                else {
+                    a.innerHTML = "D";
+                }
+            }
+        </script>
+    </body>
+</html>

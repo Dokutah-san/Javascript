@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Belajar Event - Javascript</title>
+    </head>
+    <body>
+        <button onclick="hello()">hello✖</button>
+        <br><br>
+        <button id="w">world✔</button>
+        <br><br>
+        🗿
+
+        <script>
+            function hello() {
+                alert("hello world!1");
+            }
+
+            var tombolw = document.getElementById('w');
+            tombolw.addEventListener('dblclick', function() {
+                alert("Hello World!2");
+            });
+        </script>
+    </body>
+</html>
